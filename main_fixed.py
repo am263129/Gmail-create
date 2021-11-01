@@ -252,7 +252,7 @@ def get_verification_code(number):
         url_app = "GMAIL"
         if url_country == "USA":
             url_app = "GMAIL USA"
-        url = "http://pvacodes.com/user/api/get_sms.php?customer=%s&number=%s&country=%s&app=%s"%(Entry_PVA.get(),number,url_country,url_app)#6565b1f4633389185789
+        url = "http://pvacodes.com/user/api/get_sms.php?customer=%s&number=%s&country=%s&app=%s"%(Entry_PVA.get(),number,url_country,url_app)
         page = requests.get(url)
         page_byte = page.content.decode("utf-8","ignore")
         try:
